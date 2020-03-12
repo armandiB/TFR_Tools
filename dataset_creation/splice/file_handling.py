@@ -5,8 +5,8 @@ import numpy as np
 import datetime
 import soundfile
 
-import note as nt
-import tables as tb
+import splice.note as nt
+import splice.tables as tb
 
 
 def get_instrument_paths(input_folder, sr, only_today=False):

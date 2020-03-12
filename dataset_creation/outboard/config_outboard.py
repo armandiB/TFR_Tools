@@ -1,4 +1,4 @@
-import params_utils as pa_ut
+import outboard.params_utils as pa_ut
 
 
 class OutboardConfig:
@@ -37,12 +37,13 @@ class OutboardConfig_NSynth(OutboardConfig):
         for params in parameters_matrix:
             converted_matrix += [
                 [pa_ut.midi_pitch_to_voltage(params[0]) / self.OUT_SCALE_FACTOR,
-                params[1] / 127] + params[2:]
+                params[1] / 127.] + [x/127. for x in params[2:]]
             ]
         return converted_matrix
 
     def default_parameters(self):
         return [0, 0.5]
+
 
 class OutboardConfig_NSynth_2Pitches(OutboardConfig):
     OUTPUT_FOLDER = r"/Volumes/GLYPHAB/Datasets/NSynth++/Instruments"
@@ -53,7 +54,7 @@ class OutboardConfig_NSynth_2Pitches(OutboardConfig):
             converted_matrix += [
                 [pa_ut.midi_pitch_to_voltage(params[0]) / self.OUT_SCALE_FACTOR,
                 pa_ut.midi_pitch_to_voltage(params[1]) / self.OUT_SCALE_FACTOR]
-                + params[2:]
+                + [x/127. for x in params[2:]]
             ]
         return converted_matrix
 

@@ -2,11 +2,11 @@ import soundfile
 import os
 import datetime
 
-import file_handling as fh
-import processing as pr
-import note as nt
-import key_dictionary as kd
-import tfrecord_utils as tf_ut
+import splice.file_handling as fh
+import splice.processing as pr
+import splice.note as nt
+import splice.key_dictionary as kd
+import splice.tfrecord_utils as tf_ut
 
 
 def do_splice(cf, parameters_config, write_in_place=True, only_today=False, write_key_dictionary=True):

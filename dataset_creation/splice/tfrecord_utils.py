@@ -1,7 +1,7 @@
 import tensorflow as tf
 import os
 
-import note as nt
+import splice.note as nt
 
 
 def _bytes_feature(value):

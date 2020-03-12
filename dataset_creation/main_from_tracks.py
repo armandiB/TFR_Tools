@@ -1,9 +1,9 @@
 import os
 
-import do_splice as do_sp
-import config_splice as cf_sp
-import Common.parameters_config as param_conf
-import tfrecord_utils as tf_ut
+import splice.do_splice as do_sp
+import splice.config_splice as cf_sp
+import common.parameters_config as param_conf
+import splice.tfrecord_utils as tf_ut
 
 Splice_Config = cf_sp.SpliceConfig_Tracks()
 Parameters_Config = param_conf.ParametersConfig_Tracks()

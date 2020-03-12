@@ -1,19 +1,28 @@
 import librosa
 from scipy.stats.mstats import gmean
 import numpy as np
+import copy
 
-import params_utils as pa_ut
+import outboard.params_utils as pa_ut
 
 class ParametersConfig:
     parameters_matrix = []
+    repeats = 2
 
     def __init__(self):
         self.parameters_matrix = []
 
     def copy(self):
         res = type(self)()
-        res.parameters_matrix = self.parameters_matrix.copy()
+        res.parameters_matrix = copy.deepcopy(self.parameters_matrix)
         return res
+
+    def apply_repeats(self):
+        temp = copy.deepcopy(self.parameters_matrix)
+        parameters_matrix = []
+        for x in temp:
+            for n in range(self.repeats):
+                parameters_matrix += [x]
 
 
 class ParametersConfig_NSynth(ParametersConfig):
@@ -29,6 +38,8 @@ class ParametersConfig_NSynth(ParametersConfig):
         for i in self.PITCHS:
             for j in self.VELOCITIES:
                 self.parameters_matrix.append((i, j))
+
+        self.apply_repeats()
         return
 
 class ParametersConfig_NSynth_2Pitches_absolute(ParametersConfig):
@@ -45,6 +56,8 @@ class ParametersConfig_NSynth_2Pitches_absolute(ParametersConfig):
             for j in self.VELOCITIES:
                 if j % 7 == i % 7 or j == i-1 or j == i+1:
                     self.parameters_matrix.append((i, j))
+
+        self.apply_repeats()
         return
 
 class ParametersConfig_NSynth_2Pitches_relative(ParametersConfig):
@@ -60,6 +73,8 @@ class ParametersConfig_NSynth_2Pitches_relative(ParametersConfig):
         for i in self.PITCHS:
             for j in self.VELOCITIES:
                 self.parameters_matrix.append((i, j+pa_ut.ZERO_NOTE))
+
+        self.apply_repeats()
         return
 
 class ParametersConfig_Tracks(ParametersConfig):
@@ -85,4 +100,5 @@ class ParametersConfig_Tracks(ParametersConfig):
             else:
                 self.parameters_matrix.append((i+1, int(round(127 * j / (nb_extracts - 1)))))
 
+        self.apply_repeats()
         return

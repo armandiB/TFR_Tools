@@ -1,9 +1,9 @@
 import datetime
 import os
 
-import IO_2 as io
-import file_handling as fh
-import IConfig
+import outboard.io as io
+import splice.file_handling as fh
+import outboard.instrument_config as i_conf
 
 
 def check_tuning(cfo, seconds): 
@@ -23,7 +23,7 @@ def do_outboard(cfo, parameters_config, instrument_species, instrument_genus, ic
     instr_sounds = io.record_instrument(cfo, parameters_config)
     instr_sounds_list = list(instr_sounds)
 
-    if isinstance(iconf_list, type(IConfig)):
+    if isinstance(iconf_list, type(i_conf.InstrumentConfig)):
         iconf_list = [iconf_list.copy() for _ in range(len(instr_sounds_list))]
 
     for num, instr_sound in enumerate(instr_sounds_list):
