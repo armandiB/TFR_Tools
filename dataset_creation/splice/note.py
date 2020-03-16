@@ -65,6 +65,17 @@ class Note(Instrument):
 
     pitch = None
     velocity = None
+    brightness = None
+    density = None
+    pitch2 = None
+    lfo_period = None
+    tremolo_depth = None
+    vibrato_depth = None
+    noise_amount = None
+    inharmonic_amount = None
+    wet_reverb = None
+    wet_clocked_delay = None
+    distorsion_amount = None
 
     audio = None
 
@@ -82,7 +93,10 @@ class Note(Instrument):
         self.sample_rate = instrument.sample_rate
 
         self.note_str = instrument.instrument_str + "-" + str(
-            self.pitch) + "-" + str(self.velocity)
+            self.pitch) + "-" + str(self.velocity) + "-" + str(self.brightness) + "-" + str(self.density)
+        + "-" + str(self.pitch2) + "-" + str(self.lfo_period) + "-" + str(self.tremolo_depth) + "-" + str(self.vibrato_depth)
+        + "-" + str(self.noise_amount) + "-" + str(self.inharmonic_amount) + "-" + str(self.wet_reverb) + "-" + str(self.wet_clocked_delay)
+        "-" + str(self.distorsion_amount) + "-" + str(self.note)
         return
 
     def fill_note_keys(self, key_dictionary):
@@ -105,9 +119,20 @@ class Note(Instrument):
         json_dict["note_str"] = self.note_str
         json_dict["instrument_family_str"] = self.instrument_family_str
         json_dict["instrument_str"] = self.instrument_str
-        json_dict["pitch"] = self.pitch
         json_dict["instrument"] = self.instrument
+        json_dict["pitch"] = self.pitch
         json_dict["velocity"] = self.velocity
+        json_dict["brightness"] = self.brightness
+        json_dict["density"] = self.density
+        json_dict["pitch2"] = self.pitch2
+        json_dict["lfo_period"] = self.lfo_period
+        json_dict["tremolo_depth"] = self.tremolo_depth
+        json_dict["vibrato_depth"] = self.vibrato_depth
+        json_dict["noise_amount"] = self.noise_amount
+        json_dict["inharmonic_amount"] = self.inharmonic_amount
+        json_dict["wet_reverb"] = self.wet_reverb
+        json_dict["wet_clocked_delay"] = self.wet_clocked_delay
+        json_dict["distorsion_amount"] = self.distorsion_amount
         json_dict["instrument_source"] = self.instrument_source
         json_dict["qualities_str"] = self.qualities_str.copy()
 
@@ -121,6 +146,17 @@ def make_notes(parameters_matrix):
         note = Note()
         note.pitch = params[0]
         note.velocity = params[1]
+        note.brightness = params[2]
+        note.density = params[3]
+        note.pitch2 = params[4]
+        note.lfo_period = params[5]
+        note.tremolo_depth = params[6]
+        note.vibrato_depth = params[7]
+        note.noise_amount = params[8]
+        note.inharmonic_amount = params[9]
+        note.wet_reverb = params[10]
+        note.wet_clocked_delay = params[11]
+        note.distorsion_amount = params[12]
         notes += [note]
 
     return notes

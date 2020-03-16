@@ -29,7 +29,11 @@ def do_splice(cf, parameters_config, write_in_place=True, only_today=False, writ
         parameters_config_instr = parameters_config.copy()
 
         instr_sound = fh.load_sound(instr_paths[original_instr_name], in_sample_rate)
-        instr_params = fh.load_instr_params(instr_paths[original_instr_name], instr_name, parameters_config_instr)
+        if len(parameters_config_instr.parameters_matrix) == 0:
+            instr_params = fh.load_instr_params(instr_paths[original_instr_name], instr_name, parameters_config_instr)
+        else:
+            instr_params = fh.load_instr_params(instr_paths[original_instr_name], instr_name, None)
+
         instr_params.fill_instr_keys(key_dictionary, cf.OUT_SAMPLE_RATE)
 
         nb_samples_extract = int(cf.EXTRACT_SECONDS * in_sample_rate)
@@ -55,8 +59,8 @@ def do_splice(cf, parameters_config, write_in_place=True, only_today=False, writ
             print(str(len(notes)) + ", " + str(len(resampled_extracts)))
 
         for note, sound in zip(notes, resampled_extracts):
-            note.set_instrument_params(instr_params)
             note.fill_note_keys(key_dictionary)
+            note.set_instrument_params(instr_params)
 
             note_path = note.make_note_path(instr_output_path)
             soundfile.write(note_path, sound, note.sample_rate, subtype='PCM_16')

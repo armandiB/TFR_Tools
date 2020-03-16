@@ -9,6 +9,20 @@ class ParametersConfig:
     parameters_matrix = []
     repeats = 2
 
+    PITCHES = None
+    VELOCITIES = None
+    BRIGHTNESSES = None
+    DENSITIES = None
+    PITCHES2 = None
+    LFO_PERIODS = None
+    TREMOLO_DEPTHS = None
+    VIBRATO_DEPTHS = None
+    NOISE_AMOUNTS = None
+    INHARMONIC_AMOUNTS = None
+    WET_REVERBS = None
+    WET_CLOCKED_DELAY = None
+    DISTORSION_AMOUNT = None
+
     def __init__(self):
         self.parameters_matrix = []
 
@@ -26,9 +40,9 @@ class ParametersConfig:
 
 
 class ParametersConfig_NSynth(ParametersConfig):
-    # PITCHS = [2*i+1 for i in range(18, 25)]#41)]
-    # PITCHS = [5*i for i in range(20,30)]
-    PITCHS = range(18, 113)
+    # PITCHES = [2*i+1 for i in range(18, 25)]#41)]
+    # PITCHES = [5*i for i in range(20,30)]
+    PITCHES = range(18, 113)
     # VELOCITIES = [60, 105]
     VELOCITIES = [10, 25, 50, 75, 87, 100, 112, 127]
 
@@ -43,9 +57,9 @@ class ParametersConfig_NSynth(ParametersConfig):
         return
 
 class ParametersConfig_NSynth_2Pitches_absolute(ParametersConfig):
-    # PITCHS = [2*i+1 for i in range(18, 25)]#41)]
-    # PITCHS = [5*i for i in range(20,30)]
-    PITCHS = range(18, 113)
+    # PITCHES = [2*i+1 for i in range(18, 25)]#41)]
+    # PITCHES = [5*i for i in range(20,30)]
+    PITCHES = range(18, 113)
     # VELOCITIES = [60, 105]
     VELOCITIES = range(18, 113)
 
@@ -61,9 +75,9 @@ class ParametersConfig_NSynth_2Pitches_absolute(ParametersConfig):
         return
 
 class ParametersConfig_NSynth_2Pitches_relative(ParametersConfig):
-    # PITCHS = range(18, 113)
-    PITCHS = [18] + list(range(30, 95)) + [106]
-    # PITCHS = [2*i+1 for i in range(18, 41)]
+    # PITCHES = range(18, 113)
+    PITCHES = [18] + list(range(30, 95)) + [106]
+    # PITCHES = [2*i+1 for i in range(18, 41)]
     VELOCITIES = [-24] + list(range(-12, 13)) + [24]
     # VELOCITIES = [-24, 3, 0, 7, 12]
 

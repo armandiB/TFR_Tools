@@ -32,4 +32,17 @@ qualities_idx_to_str = {
     8: "reverb",
     9: "tempo-synced",
     10: "hq",
+    11: "has_pitch",
+    12: "has_velocity",
+    13: "has_brightness",
+    14: "has_density",
+    15: "has_pitch2",
+    16: "has_lfo_period",
+    17: "has_tremolo_depth",
+    18: "has_vibrato_depth",
+    19: "has_noise_amount",
+    20: "has_inharmonic_amount",
+    21: "has_wet_reverb",
+    22: "has_wet_clocked_delay",
+    23: "has_distorsion_amount"
 }

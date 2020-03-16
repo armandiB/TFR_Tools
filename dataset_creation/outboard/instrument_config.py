@@ -1,7 +1,7 @@
 class InstrumentConfig:
     instrument_source = None
     instrument_family = None
-    qualities = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    qualities = [0] * 24
 
     def write_P(self, P_path, parameters_matrix, config_outboard_name, parameters_config_name):
         P_file = open(P_path, "x")

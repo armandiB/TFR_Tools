@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d9f85ae-0e0a-4f62-a46c-1b62006a924b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/TFR_Tools.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TFR_Tools.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dataset_creation/common/parameters_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_creation/common/parameters_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset_creation/main_from_tracks.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_creation/main_from_tracks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset_creation/outboard/config_outboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_creation/outboard/config_outboard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset_creation/outboard/do_outboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_creation/outboard/do_outboard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_creation/outboard/instrument_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_creation/outboard/instrument_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_creation/outboard/params_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_creation/outboard/params_utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dataset_creation/splice/do_splice.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_creation/splice/do_splice.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset_creation/splice/file_handling.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_creation/splice/file_handling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset_creation/splice/tfrecord_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_creation/splice/tfrecord_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_creation/splice/note.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_creation/splice/note.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_creation/splice/tables.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_creation/splice/tables.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,8 +32,8 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dataset_creation" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -197,11 +198,16 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
