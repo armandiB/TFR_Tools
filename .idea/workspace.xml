@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d9f85ae-0e0a-4f62-a46c-1b62006a924b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/TFR_Tools.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TFR_Tools.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset_creation/common/parameters_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_creation/common/parameters_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset_creation/outboard/instrument_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_creation/outboard/instrument_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset_creation/outboard/params_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_creation/outboard/params_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset_creation/splice/do_splice.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_creation/splice/do_splice.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset_creation/splice/note.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_creation/splice/note.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset_creation/splice/tables.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_creation/splice/tables.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -191,6 +183,14 @@
       <option name="presentableId" value="Default" />
       <updated>1558964040777</updated>
     </task>
+    <task id="LOCAL-00001" summary="First commit new features.">
+      <created>1584328095239</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584328095239</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -207,7 +207,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="First commit new features." />
+    <option name="LAST_COMMIT_MESSAGE" value="First commit new features." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
