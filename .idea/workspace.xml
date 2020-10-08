@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0d9f85ae-0e0a-4f62-a46c-1b62006a924b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox.py" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_creation/splice/file_handling.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_creation/splice/file_handling.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,9 +222,10 @@
     </state>
     <state width="1259" height="324" key="GridCell.Tab.0.right/0.0.1440.900/579.-1024.1280.1024/1859.-1024.1280.1024@1859.-1024.1280.1024" timestamp="1586726880512" />
     <state width="1259" height="324" key="GridCell.Tab.0.right/0.23.1440.877/579.-1001.1280.1001/1859.-1024.1280.1024@1859.-1024.1280.1024" timestamp="1586726914185" />
-    <state x="2008" y="-873" key="SettingsEditor" timestamp="1586712878829">
-      <screen x="1859" y="-1024" width="1280" height="1024" />
+    <state x="168" y="133" key="SettingsEditor" timestamp="1593829686580">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="168" y="133" key="SettingsEditor/0.0.1440.900/-1920.-74.1920.1080/1440.-62.1920.1080@0.0.1440.900" timestamp="1593829686580" />
     <state x="2008" y="-873" key="SettingsEditor/0.0.1440.900/579.-1024.1280.1024/1859.-1024.1280.1024@1859.-1024.1280.1024" timestamp="1586712878829" />
   </component>
   <component name="XDebuggerManager">

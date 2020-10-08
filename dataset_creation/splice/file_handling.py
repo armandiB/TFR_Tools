@@ -29,7 +29,7 @@ def get_instrument_paths(input_folder, sr, only_today=False):
                         else:
                             instrument_paths[instrument_name] = [os.path.join(r, name)]
 
-    return instrument_paths, instrument_paths.keys()
+    return instrument_paths, instrument_paths.keys()  # ToDo clean
 
 
 def load_sound(instrument_path_list, sr):
